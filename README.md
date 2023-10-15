@@ -20,3 +20,17 @@ Implement the iterative strategy to resolve input DNS queries by consulting the 
 - Returning the resolved IP address for an A record
 
 Implement a cache for your local DNS server. Increase the efficieny.
+
+
+### 2. Reliable and Congestion Controlled Data Transfer over UDP
+
+Add connection support to UDP using a three-way handshake (just like TCP) and create a new version of UDP called UDP Putah.
+(When a client connects to a server, it will send a handshake message to the server. If the server is willing to connect, it will send the response back to the client telling it that a connection has been established on the server’s end. Finally, the client also sets up a connection and sends an acknowledgement for it back to the server.)
+
+SELF-Defined separate header for UDP.
+
+Adding Reliability to UDP Putah (UDP Solano)
+(A similar acknowledgement process as TCP, where instead of acknowledging each individual packet, acknowledge the number of bytes that the receiver has successfully received so far. as cumulative acknowledgement)
+
+Adding Congestion Control to UDP Solano (UDP Berryessa)
+(Adding a flavour of congestion control to UDP Solano (making it a connection-oriented, reliable, congestion-controlled UDP Berryessa, quite a mouthful).)
